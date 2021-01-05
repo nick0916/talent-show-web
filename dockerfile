@@ -3,6 +3,7 @@ FROM node:12 as node-builder
 WORKDIR /app
 COPY ./ngx-admin /app
 
+RUN rm -rf node_modules
 RUN npm install
 RUN npm run build
 
