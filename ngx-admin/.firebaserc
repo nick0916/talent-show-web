@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "talent-show-taipei-101": {
+      "hosting": {
+        "ngx-admin-demo": [
+          "talent-show-taipei-101"
+        ]
+      }
+    }
+  }
+}
