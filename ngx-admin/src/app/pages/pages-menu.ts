@@ -15,7 +15,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'Customer365',
     icon: 'home-outline',
-    link: '/pages/customer365',
+    link: '/pages/customer360',
   },
   {
     title: 'Food-analytics',

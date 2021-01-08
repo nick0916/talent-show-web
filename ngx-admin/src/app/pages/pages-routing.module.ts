@@ -5,7 +5,7 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
-import { Customer } from './customer365/customer365.component';
+import { Customer } from './customer360/customer365.component';
 import { FoodComponent } from './food/food.component';
 
 const routes: Routes = [{
@@ -21,7 +21,7 @@ const routes: Routes = [{
       component: DashboardComponent,
     },
     {
-      path: 'customer365',
+      path: 'customer360',
       component: Customer
     },
     {
