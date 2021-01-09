@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs/Observable';
+import { NbComponentShape, NbComponentSize, NbComponentStatus } from '@nebular/theme';
 
 @Component({
     selector: 'customer',
@@ -8,6 +9,7 @@ import { Observable } from 'rxjs/Observable';
 })
 export class Customer {
     items$: Observable<any[]>;
+    statuses: NbComponentStatus[] = [ 'primary', 'success', 'info', 'warning', 'danger' ];
 
     constructor(private _db: AngularFireDatabase) {
         this.items$ = this._db.list('items').valueChanges();

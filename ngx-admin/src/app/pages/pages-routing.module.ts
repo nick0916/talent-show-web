@@ -7,6 +7,7 @@ import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 import { Customer } from './customer360/customer365.component';
 import { FoodComponent } from './food/food.component';
+import { ActivityComponent } from './activity/activity.component';
 
 const routes: Routes = [{
   path: '',
@@ -27,6 +28,10 @@ const routes: Routes = [{
     {
       path: 'food-analytics',
       component: FoodComponent
+    },
+    {
+      path: 'activity-analytics',
+      component: ActivityComponent
     },
     {
       path: 'layout',

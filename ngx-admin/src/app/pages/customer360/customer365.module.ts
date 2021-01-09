@@ -10,7 +10,9 @@ import {
     NbListModule,
     NbIconModule,
     NbTreeGridModule,
-    NbInputModule
+    NbInputModule,
+    NbChatModule,
+    NbAccordionModule,
 } from '@nebular/theme';
 import { NgxEchartsModule } from 'ngx-echarts';
 
@@ -21,6 +23,8 @@ import { FormsModule } from '@angular/forms';
 import { EchartsMultipleXaxisComponent } from './trace-routing/echarts-multiple-xaxis.component';
 import { TreeGridComponent } from './tree-grid/tree-grid.component'
 import { EchartsPiePurchaseItemComponent } from './pie-purchace-item/echarts-pie.component';
+import { ChatComponent } from './chat/chat.component';
+import { AccordionComponent } from './accordion/accordion.component';
 
 @NgModule({
     imports: [
@@ -38,14 +42,18 @@ import { EchartsPiePurchaseItemComponent } from './pie-purchace-item/echarts-pie
         NbButtonModule,
         NgxEchartsModule,
         NbTreeGridModule,
-        NbInputModule
+        NbInputModule,
+        NbChatModule,
+        NbAccordionModule
     ],
     declarations: [
         Customer,
         KittenComponent,
         EchartsMultipleXaxisComponent,
         TreeGridComponent,
-        EchartsPiePurchaseItemComponent
+        EchartsPiePurchaseItemComponent,
+        ChatComponent,
+        AccordionComponent
     ],
 })
 export class CustomerModule { }

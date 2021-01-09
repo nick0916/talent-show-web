@@ -13,7 +13,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/iot-dashboard',
   },
   {
-    title: 'Customer365',
+    title: 'Customer360',
     icon: 'home-outline',
     link: '/pages/customer360',
   },
@@ -21,6 +21,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     title: 'Food-analytics',
     icon: 'home-outline',
     link: '/pages/food-analytics',
+  },
+  {
+    title: 'Activity-analytics',
+    icon: 'home-outline',
+    link: '/pages/activity-analytics',
   },
   {
     title: 'FEATURES',

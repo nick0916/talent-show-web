@@ -1,37 +1,101 @@
 <div class="row">
-  <div class="col-xxxl-3">
-    <ngx-kitten></ngx-kitten>
-    <nb-card style="height: 47%">
-      <div class="details">
-        test 
-      </div>
-    </nb-card>
-  </div>
-  <div class="col-xxxl-9 col-xxl-12 col-lg-6">
-    <div class="col-xxxl-12">
-      <nb-card>
-        <nb-card-header>足跡分析</nb-card-header>
-        <nb-card-body>
-          <trace-routing></trace-routing>
-        </nb-card-body>
-      </nb-card>
-    </div>
+  <div class="col-xxxl-7">
     <div class="row">
       <div class="col-xxxl-6">
-        <ngx-echarts-pie-purchase-item></ngx-echarts-pie-purchase-item>
+        <ngx-kitten></ngx-kitten>
       </div>
-      <div class="col-xxxl-6">
-        <ngx-echarts-pie-purchase-item></ngx-echarts-pie-purchase-item>
+      <div class="col-md-6 col-xxxl-6">
+        <nb-card [size]="'medium'">
+          <nb-card-header>
+            Article Example
+          </nb-card-header>
+          <nb-card-body>
+            <h4>So what's About the grammar?</h4>
+            <p>
+              Far far away, behind the word mountains, far from the countries <strong>Vokalia</strong> and <strong>Consonantia</strong>,
+              there live the blind texts.
+              They live in <strong>Bookmarksgrove</strong>.
+            </p>
+            <p>
+              A small <strong>river named Duden</strong> flows by their place and supplies it with the
+              necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly
+              into your mouth.
+              Even the all-powerful Pointing has no control about the blind texts it is an almost
+              unorthographic life One day however a small
+              line of blind text by the name of
+              <a href="http://google.com" target="_blank">Lorem Ipsum</a> decided to leave for
+              the far <strong>World of Grammar</strong>.
+            </p>
+          </nb-card-body>
+        </nb-card>
       </div>
     </div>
+    <ngx-echarts-pie-purchase-item></ngx-echarts-pie-purchase-item>
+    <!-- <div class="col-xxxl-6">
+      <ngx-echarts-pie-purchase-item></ngx-echarts-pie-purchase-item>
+    </div> -->
+  </div>
+  <div class="col-xxxl-3 col-xxl-12 col-lg-6">
+    <ngx-chat></ngx-chat>
+    <!-- <div class="row">
+      <div class="col-xxxl-6">
+      </div>
+    </div> -->
   </div>
 </div>
 <br>
 <br>
 <div class="row">
-  <div class="col-xxxl-12">
-    <ngx-tree-grid></ngx-tree-grid>
+  <div class="col-xxxl-7">
+    <nb-accordion>
+      <nb-accordion-item #item>
+        <nb-accordion-item-header>
+          Product Details
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+          Originally, nebula was a name for any diffuse astronomical object,
+          including galaxies beyond the Milky Way.
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          Reviews
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+          Originally, nebula was a name for any diffuse astronomical object,
+          including galaxies beyond the Milky Way.
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          Edit
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+          Originally, nebula was a name for any diffuse astronomical object,
+          including galaxies beyond the Milky Way.
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+    </nb-accordion>
+  </div>
+  <div class="col-xxxl-4"> 
+    <nb-card>
+      <nb-card-header>Analytics Tags</nb-card-header>
+      <nb-card-body>
+        <div class="buttons-row">
+          <button style="margin: 10px;" *ngFor="let status of statuses" nbButton [status]="status" hero>
+            {{ status }}
+          </button>
+          <button disabled nbButton hero>
+            disabled
+          </button>
+        </div>
+      </nb-card-body>
+    </nb-card>
   </div>
 </div>
-
 {{items$ | async | json}}
