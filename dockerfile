@@ -5,7 +5,7 @@ COPY ./ngx-admin /app
 
 RUN rm -rf node_modules
 RUN npm install
-RUN npm run build
+RUN npm run build  -- --prod --aot
 
 FROM nginx
 COPY --from=node-builder /app/dist /usr/share/nginx/html
