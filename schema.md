@@ -29,10 +29,30 @@
     "email": "nick@ibm.com", // 電子信箱
     "phone": "0907705916", // 電話
     "LicensePlate": "XXXX-XXXX", //車牌號碼
-    "messageList": [{
+    "customerCategory": "A", // 客群分類
+    "totalAmtYear": "40000", // 年度消費金額
+    "messageList": [{ 
 
     }],
-    "analticsTagList": []
+    "analticsTagList": [
+        "經典款式", "日式食物"
+    ], // 分析後的標籤(形容喜好等等)
+    "purchaseList": [{
+        "name": "手錶",
+        "category": "飾品",
+        "price": "40000",
+        "tag": ["經典款式"],
+        "time": "2020/12/22 14:50",
+        "activity": ["週年慶"],
+    }, 
+    {
+        "name": "拉麵",
+        "category": "食物",
+        "price": "100",
+        "tag": ["日式"],
+        "time": "2020/12/22 15:50",
+        "activity": [],
+    }],
 }
 ```
 ## `要在line活動的資料`
