@@ -29,7 +29,7 @@
     "email": "nick@ibm.com", // 電子信箱
     "phone": "0907705916", // 電話
     "LicensePlate": "XXXX-XXXX", //車牌號碼
-    "customerCategory": "A", // 客群分類
+    "customerCategory": "A", // 客群分類(A: 右上, B: 右下, C: 左上, D: 左下)
     "totalAmtYear": "40000", // 年度消費金額
     "messageList": [{ 
 
