@@ -1,0 +1,54 @@
+
+<div class="row">
+<div class="col-md-12">
+    <nb-card class="inline-form-card">
+        <nb-card-header>選擇活動</nb-card-header>
+        <nb-card-body>
+            <form class="form-inline" style="display: inline-flex;">
+            <input nbInput placeholder="活動時間" [nbDatepicker]="rangepicker">
+            <nb-rangepicker #rangepicker></nb-rangepicker>
+            <nb-select selected="1">
+                <nb-option value="1">Option 1</nb-option>
+                <nb-option value="2">Option 2</nb-option>
+            </nb-select>
+            <button type="submit" nbButton status="primary">Submit</button>
+            </form>
+        </nb-card-body>
+    </nb-card>
+</div>
+<div class="col-lg-6">
+    <nb-card>
+    <nb-card-header>Multiple x-axis</nb-card-header>
+    <nb-card-body>
+        <ngx-echarts-multiple-xaxis></ngx-echarts-multiple-xaxis>
+    </nb-card-body>
+    </nb-card>
+</div>
+<div class="col-lg-6">
+    <nb-card>
+    <nb-card-header>Pie</nb-card-header>
+    <nb-card-body>
+        <ngx-echarts-pie-item></ngx-echarts-pie-item>
+    </nb-card-body>
+    </nb-card>
+</div>
+<div class="col-lg-6">
+    <nb-card>
+    <nb-card-header>Bar</nb-card-header>
+    <nb-card-body>
+        <ngx-echarts-bar></ngx-echarts-bar>
+    </nb-card-body>
+    </nb-card>
+</div>
+<div class="col-lg-6">
+    <nb-card>
+    <nb-card-header>Pie</nb-card-header>
+    <nb-card-body>
+        <ngx-echarts-pie-item></ngx-echarts-pie-item>
+    </nb-card-body>
+    </nb-card>
+</div>
+</div>
+<div class="row">
+
+</div>
