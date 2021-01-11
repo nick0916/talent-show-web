@@ -10,6 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class ActivityComponent {
     items$: Observable<any[]>;
+    startButton: Boolean = false;
 
     constructor(
         private _db: AngularFireDatabase,
@@ -37,6 +38,9 @@ export class ActivityComponent {
     this.thirdForm = this.fb.group({
       thirdCtrl: ['', Validators.required],
     });
+  }
+  start(){
+      this.startButton = !this.startButton;
   }
 
   onFirstSubmit() {

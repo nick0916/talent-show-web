@@ -1,46 +1,47 @@
-<h1>活動趨勢分析</h1>
-<nb-card class="col-md-12 col-lg-12 col-xxxl-12">
-  <nb-card-body>
-    <nb-stepper orientation="horizontal">
-      <nb-step [label]="labelOne">
-        <ng-template #labelOne><h6>挑選過去活動</h6></ng-template>
-        <analPastActivity></analPastActivity>
-        <button nbButton disabled nbStepperNext>prev</button>
-        <button nbButton nbStepperNext>next</button>
-      </nb-step>
-      <nb-step [label]="labelTwo">
-        <ng-template #labelTwo><h6>設定邀請客群</h6></ng-template>
-        <calCustomer></calCustomer>
-        <button nbButton nbStepperPrevious>prev</button>
-        <button nbButton nbStepperNext>next</button>
-      </nb-step>
-      <nb-step [label]="labelThree">
-        <ng-template #labelThree><h6>設定邀請內容</h6></ng-template>
-        <inviteContent></inviteContent>
-        <button nbButton nbStepperPrevious>prev</button>
-        <button nbButton nbStepperNext>next</button>
-      </nb-step>
-      <nb-step [label]="labelFour">
-        <ng-template #labelFour><h6>發送邀請</h6></ng-template>
-        <sendMessage></sendMessage>
-        <button nbButton nbStepperPrevious>prev</button>
-        <button nbButton disabled nbStepperNext>next</button>
-      </nb-step>
-    </nb-stepper>
-  </nb-card-body>
-</nb-card>
+<!-- <div *ngIf="!startButton" class="animate__animated" [ngClass]="{'animate__slideInDown' : !startButton, 'animate__slideOutDown': startButton}">
+  <div class="row">
+    <h1>test13</h1>
+    <img src="assets/images/activity.png">
+  </div>
+  <div class="row">
+    <button nbButton status="primary" hero (click)="start()" style="margin: auto;">
+      開始分析
+    </button>
+  </div>
+  <div>
 
-<!-- <div class="row">
-
-    <div class="col-md-12 col-lg-6 col-xxl-12">
-      <nb-card size="small">
-        <nb-tabset>
-          <nb-tab tabTitle="過去活動分析">
-          </nb-tab>
-          <nb-tab tabTitle="寄送活動邀請">
-            <span>Content #2</span>
-          </nb-tab>
-        </nb-tabset>
-      </nb-card>
-    </div>
+  </div>
 </div> -->
+<div *ngIf="true" class="animate__animated animate__slideInDown ">
+  <h1>活動趨勢分析</h1>
+  <nb-card class="col-md-12 col-lg-12 col-xxxl-12">
+    <nb-card-body>
+      <nb-stepper orientation="horizontal">
+        <nb-step [label]="labelOne">
+          <ng-template #labelOne><h6>挑選過去活動</h6></ng-template>
+          <analPastActivity></analPastActivity>
+          <button nbButton disabled nbStepperNext>prev</button>
+          <button nbButton nbStepperNext>next</button>
+        </nb-step>
+        <nb-step [label]="labelTwo">
+          <ng-template #labelTwo><h6>設定邀請客群</h6></ng-template>
+          <calCustomer></calCustomer>
+          <button nbButton nbStepperPrevious>prev</button>
+          <button nbButton nbStepperNext>next</button>
+        </nb-step>
+        <nb-step [label]="labelThree">
+          <ng-template #labelThree><h6>設定邀請內容</h6></ng-template>
+          <inviteContent></inviteContent>
+          <button nbButton nbStepperPrevious>prev</button>
+          <button nbButton nbStepperNext>next</button>
+        </nb-step>
+        <nb-step [label]="labelFour">
+          <ng-template #labelFour><h6>發送邀請</h6></ng-template>
+          <sendMessage></sendMessage>
+          <button nbButton nbStepperPrevious>prev</button>
+          <button nbButton disabled nbStepperNext>next</button>
+        </nb-step>
+      </nb-stepper>
+    </nb-card-body>
+  </nb-card>
+</div>
